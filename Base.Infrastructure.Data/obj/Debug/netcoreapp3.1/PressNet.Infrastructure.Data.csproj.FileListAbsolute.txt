@@ -1,0 +1,15 @@
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.deps.json
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.pdb
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Domain.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Domain.pdb
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.pdb
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.csproj.AssemblyReference.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.csproj.CopyComplete
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.Data\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.Data.pdb

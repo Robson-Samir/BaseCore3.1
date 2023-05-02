@@ -1,0 +1,10 @@
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.deps.json
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.pdb
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.AssemblyInfo.cs
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.dll
+C:\Users\rferreira\Desktop\Projetos\PressNet\Back-End\pn_adm-V2\PressNet\PressNet.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\PressNet.Infrastructure.CrossCutting.pdb

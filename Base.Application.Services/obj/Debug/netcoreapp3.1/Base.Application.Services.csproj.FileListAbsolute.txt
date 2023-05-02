@@ -1,0 +1,15 @@
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Application.Services.deps.json
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Application.Services.dll
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Application.Services.pdb
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Domain.dll
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Infrastructure.CrossCutting.dll
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Domain.pdb
+D:\Projetos\BaseCore3.1\Base.Application.Services\bin\Debug\netcoreapp3.1\Base.Infrastructure.CrossCutting.pdb
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.csproj.AssemblyReference.cache
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.AssemblyInfoInputs.cache
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.AssemblyInfo.cs
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.csproj.CoreCompileInputs.cache
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.csproj.CopyComplete
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.dll
+D:\Projetos\BaseCore3.1\Base.Application.Services\obj\Debug\netcoreapp3.1\Base.Application.Services.pdb
