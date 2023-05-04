@@ -7,6 +7,7 @@ using Base.Domain.Interfaces.Repositories;
 using Base.Infrastructure.Data.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Base.Infrastructure.CrossCutting.Utilities;
 
 namespace Base.Infrastructure.CrossCutting.IoC
 {
@@ -38,7 +39,7 @@ namespace Base.Infrastructure.CrossCutting.IoC
             interfaceService.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             #endregion
-
+            Constants.serviceProvider = interfaceService.BuildServiceProvider();
             return interfaceService;
         }
     }

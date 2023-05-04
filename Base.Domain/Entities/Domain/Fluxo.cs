@@ -4,7 +4,7 @@ namespace Base.Domain.Entities.Domain
 {
     public class Fluxo
     {
-        decimal Valor { get; set; }
-        TipoPagamnento TipoPagamnento { get; set; }
+        public decimal Valor { get; set; }
+        public TipoPagamnento TipoPagamnento { get; set; }
     }
 }

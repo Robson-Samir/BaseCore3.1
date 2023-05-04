@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using Base.Infrastructure.CrossCutting.Logs;
+using System.Net;
 
 namespace Base.Application.Api.Attributes
 {
@@ -14,13 +16,38 @@ namespace Base.Application.Api.Attributes
     {
         public override void OnException(ExceptionContext context)
         {
-            var codigo = Marshal.GetExceptionCode().ToString();
+            var codigo = Marshal.GetExceptionPointers().ToString();
+            var portalExeception = context.Exception.GetType().GetProperty("Causas");
             var messagem = context.Exception.Message;
             var rastreamento = context.Exception.StackTrace;
-            context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            context.Result = new JsonResult(new ResultadoBase(codigo, messagem, rastreamento));
 
-            base.OnException(context);
+            if (context.Exception is BusinessException)
+            {
+                Log.Information("[BusinessException] " + messagem);
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.OK;
+                context.HttpContext.Response.ContentType = "application/json";
+                context.Result = new JsonResult(new ResultadoBase(codigo, messagem, rastreamento));
+            }
+            else
+            {
+                Log.Error("[Exception] " + messagem);
+
+                if (portalExeception?.PropertyType.Name == "PortalHttpExceptionInfo[]")
+                {
+                    context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    context.HttpContext.Response.ContentType = "application/json";
+                    context.Result = new JsonResult(new ResultadoBase(codigo, messagem, rastreamento));
+                }
+
+                else
+                {
+                    context.HttpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    context.HttpContext.Response.ContentType = "application/json";
+                    context.Result = new JsonResult(new ResultadoBase(codigo, messagem, rastreamento));
+                }
+
+                base.OnException(context);
+            }
         }
     }
 }

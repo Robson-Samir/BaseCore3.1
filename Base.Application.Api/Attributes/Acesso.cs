@@ -4,7 +4,7 @@ using Base.Infrastructure.CrossCutting.Enums;
 namespace Base.Application.Api.Attributes
 {
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
-    public class UniqueLoginAccess : Attribute
+    public class Acesso : Attribute
     {
         /// <summary>
         /// Tipo de Acesso
@@ -26,7 +26,7 @@ namespace Base.Application.Api.Attributes
         /// </summary>
         /// <param name="funcionalidade">Funcionalidade</param>
         /// <param name="tipoPermissao">Tipo de Permissão</param>
-        public UniqueLoginAccess(Funcionalidade funcionalidade, TipoDePermissao tipoPermissao)
+        public Acesso(Funcionalidade funcionalidade, TipoDePermissao tipoPermissao)
         {
             _TipoAcesso = TipoAcesso.Acesso;
             _Funcionalidade = funcionalidade;
@@ -39,7 +39,7 @@ namespace Base.Application.Api.Attributes
         /// <param name="tipoAcesso">Tipo de Acesso</param>
         /// <param name="funcionalidade">Funcionalidade</param>
         /// <param name="tipoPermissao">Tipo de Permissão</param>
-        public UniqueLoginAccess(TipoAcesso tipoAcesso, Funcionalidade funcionalidade, TipoDePermissao tipoPermissao)
+        public Acesso(TipoAcesso tipoAcesso, Funcionalidade funcionalidade, TipoDePermissao tipoPermissao)
         {
             _TipoAcesso = tipoAcesso;
             _Funcionalidade = funcionalidade;

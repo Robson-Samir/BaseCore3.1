@@ -26,6 +26,9 @@ namespace Base.Infrastructure.CrossCutting.Logs
         public static void Error(Exception ex, string message = "") =>
             _log.Error(ex, message);
 
+        public static void Error(string message = "") =>
+            _log.Error(message);
+
         public static void Error(Exception ex, string message = "", params object[] values) =>
             _log.Error(ex, message, values);
 

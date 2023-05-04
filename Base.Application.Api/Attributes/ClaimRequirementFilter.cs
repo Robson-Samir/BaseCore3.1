@@ -5,10 +5,11 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc;
 using Base.Infrastructure.CrossCutting.Enums;
+using System;
 
 namespace Base.Application.Api.Attributes
 {
-    public class ClaimRequirementFilter : IAuthorizationFilter
+    public class ClaimRequirementFilter : Attribute, IAuthorizationFilter
     {
         readonly Claim _claim;
 
@@ -29,7 +30,7 @@ namespace Base.Application.Api.Attributes
                 var controllerActionDescriptor = context.ActionDescriptor as ControllerActionDescriptor;
                 if (controllerActionDescriptor != null)
                 {
-                    var acessos = controllerActionDescriptor.MethodInfo.GetCustomAttributes<UniqueLoginAccess>();
+                    var acessos = controllerActionDescriptor.MethodInfo.GetCustomAttributes<Acesso>();
                     var permissao = false;
                     var permissaoTodos = "";
                     var permissaoComposta = "";

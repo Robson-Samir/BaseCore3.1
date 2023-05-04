@@ -183,5 +183,17 @@ namespace Base.Application.Api
             //Adicionar a compressão ao servico
             app.UseResponseCompression();
         }
+
+        public static IServiceCollection MontaBanco(IServiceCollection services, IConfiguration Configuration)
+        {
+            services.AddDbContext<DataContext>(options => options.UseSqlServer("",
+                providerOptions =>
+                {
+                    providerOptions.CommandTimeout(150000);
+                }), ServiceLifetime.Transient);
+
+            return services;
+
+        }
     }
 }
