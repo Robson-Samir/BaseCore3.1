@@ -50,8 +50,7 @@ namespace Base.Application.Api
                .AddMvc(options =>
                {
                    options.Filters.Add(new ApiExceptionFilter());//Tratamento das Exceptions
-               })
-               .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+               });
            
             //AutoMapper
             services.AddAutoMapper(typeof(MappingProfile));
