@@ -18,18 +18,21 @@ namespace Base.Infrastructure.CrossCutting.IoC
             #region AppService
 
             interfaceService.AddScoped(typeof(IFluxoAppService), typeof(FluxoAppService));
+            interfaceService.AddScoped(typeof(IPedidoAppService), typeof(PedidoAppService));
 
             #endregion
 
             #region Service
 
             interfaceService.AddScoped(typeof(IFluxoService), typeof(FluxoService));
+            interfaceService.AddScoped(typeof(IPedidoService), typeof(PedidoService));
 
             #endregion
 
             #region Repository
 
             interfaceService.AddScoped(typeof(IFluxoRepository), typeof(FluxoRepository));
+            interfaceService.AddScoped(typeof(IPedidoRepository), typeof(PedidoRepository));
 
             #endregion
 
