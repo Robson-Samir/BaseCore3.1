@@ -1,0 +1,191 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- PROJETO PARA FINS DIDATICOS -->
+<style>
+
+:root{
+    --color_0: #000;
+    --color_1: #fff;
+    --color_2: #2655c1;
+    --color_3: #372f7f;
+}
+
+.form-bg{
+    background: #e4e6e6;margin:0 auto;padding:50px;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+}
+.form-horizontal .header{
+    background: linear-gradient(135deg,var(--color_2),var(--color_3),var(--color_2),var(--color_3));
+    padding: 30px 25px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px 3px 0 0;
+}
+.form-horizontal .heading{
+    font-size: 16px;
+    color: #2655c1;
+    margin: 10px 0 20px 0;
+    text-transform: capitalize;
+}
+.form-horizontal .form-content{
+    padding: 25px;
+    background: #fff;
+}
+.form-horizontal .form-control{
+    padding: 12px 16px 12px 39px;
+    height: 50px;
+    font-size: 14px;
+    color: #2b2a2a;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.form-horizontal .form-control:focus{
+    border-color: #2655c1;
+    box-shadow: none;
+}
+.form-horizontal .control-label{
+    font-size: 17px;
+    color: #ccc;
+    position: absolute;
+    top: 5px;
+    left: 27px;
+    text-align: center;
+}
+.form-horizontal textarea.form-control{
+    resize: vertical;
+    height: 130px;
+}
+.form-horizontal .btn{
+    font-size: 18px;
+    color: #4e4e4e;
+    float: right;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 0;
+    padding: 10px 25px;
+    transition: all 0.5s ease 0s;
+}
+.btnmk{background: linear-gradient(135deg,var(--color_2),var(--color_3),var(--color_2),var(--color_3));color: var(--color_1) !important;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);}
+.form-horizontal .btn:hover{
+    background: #fff;
+    border-color: #2655c1;color:#000 !important;
+}
+.col-sm-6{float:left;}
+.col-md-offset-2.col-md-6 {
+
+    margin: 0 auto;
+
+}
+</style>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    	<h2 style="text-align:center">Cadastro de <span class="red" style="color:red"></span><span class="red" style="color:red"></span>Pedidos</h2>
+	<hr>
+	</div>
+	<div class="form-bg">
+    <div class="">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-6">
+                <form class="form-horizontal" [formGroup]="pedidoForm">
+                    <div class="form-content">
+                        <h4 class="heading">Dados do pedido e endereço de entrega</h4>
+                        <div class="form-group">
+                          <!-- Aqui podemos carregar este id por uma api -->
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Idcliente"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Idcliente" placeholder="Idcliente" type="number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="NumeroPedido"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="NumeroPedido" placeholder="NumeroPedido" type="number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Descricao"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Descricao" placeholder="Descricao" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Aqui pode ser usado alguma bilioteca do tipo maskmoney para formatar moeda -->
+                                <label class="control-label" formControlName="Valor"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Valor" placeholder="Valor" type="text">
+                            </div>
+                                <!-- Aqui podemos usar uma api para carregar o cep, e  pode ser feito tanto no back quandto no front -->
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Cep"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Cep" placeholder="Cep" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Rua"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Rua" placeholder="Rua" type="text">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Numero"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Numero" placeholder="Numero" type="number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Bairro"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Bairro" placeholder="Bairro" type="number">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" formControlName="Cidade"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="Cidade" placeholder="Cidade" type="number">
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-6">
+                                  <label class="control-label" formControlName="Estado"><i class="fa fa-user"></i></label>
+                                  <input class="form-control" id="Estado" placeholder="Estado" type="number">
+                              </div>
+                        </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label class="control-label" for="exampleInputName2"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="exampleInputName2" placeholder="Indore" type="text">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="control-label" for="exampleInputName2"><i class="fa fa-user"></i></label>
+                                <input class="form-control" id="exampleInputName2" placeholder="452009" type="text">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                        <!-- <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="control-label" for="exampleInputName2"><i class="fa fa-calendar"></i></label>
+                                <textarea class="form-control" placeholder="Additional Message"></textarea>
+                            </div>
+                        </div> -->
+                        <div class="clearfix">
+                            <button class="btn btn-default btnmk" (click)="gravarPedido()"> Registrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fiz toda criação da tela aqui, mais isso pode ser trabalhado via roteamento  -->
+<router-outlet></router-outlet>
